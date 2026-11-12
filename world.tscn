@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b0sxkuiqrrhn5"]
+
+[ext_resource type="Script" uid="uid://cyunr4bmy66lj" path="res://world.gd" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://dmscam62fdpt2" path="res://player.tscn" id="2_fj7yv"]
+[ext_resource type="Shader" uid="uid://d4d8qq06lkvm5" path="res://sky.gdshader" id="2_tlwt5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_036b0"]
+shader = ExtResource("2_tlwt5")
+
+[sub_resource type="Sky" id="Sky_tlwt5"]
+sky_material = SubResource("ShaderMaterial_036b0")
+
+[sub_resource type="Environment" id="Environment_aqk2v"]
+background_mode = 2
+sky = SubResource("Sky_tlwt5")
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.25
+
+[node name="World" type="Node" unique_id=2132435747]
+script = ExtResource("1_f3sb7")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=584654051]
+environment = SubResource("Environment_aqk2v")
+
+[node name="Player" parent="." unique_id=1678036040 instance=ExtResource("2_fj7yv")]
