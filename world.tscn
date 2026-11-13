@@ -24,3 +24,8 @@ script = ExtResource("1_f3sb7")
 environment = SubResource("Environment_aqk2v")
 
 [node name="Player" parent="." unique_id=1678036040 instance=ExtResource("2_fj7yv")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2123586328]
+transform = Transform3D(0.705562, 0, 0.70864826, -0.522622, 0.6753565, 0.52034587, -0.47859022, -0.7374915, 0.47650588, 0, 0, 0)
+
+[node name="Platforms" type="Node3D" parent="." unique_id=475861495]

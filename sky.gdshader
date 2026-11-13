@@ -1,6 +1,6 @@
 shader_type sky;
 
 void sky() {
-	COLOR = sin(abs(EYEDIR));
+	COLOR = abs(sin(EYEDIR * 0.75));
 	COLOR.r = 1.;
 }

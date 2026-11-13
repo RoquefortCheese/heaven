@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b6blsqgxo04m2"]
+
+[ext_resource type="Script" uid="uid://dhh8csunxjuhy" path="res://platform.gd" id="1_mi635"]
+
+[node name="Platform" type="Node3D" unique_id=1854393980]
+script = ExtResource("1_mi635")
+
+[node name="Blocks" type="Node3D" parent="." unique_id=13545222]

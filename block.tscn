@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dt645t32c2207"]
+
+[ext_resource type="Script" uid="uid://udovp4oxapnx" path="res://block.gd" id="1_im0tn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qncar"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xfwl5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qncar"]
+material = SubResource("StandardMaterial3D_xfwl5")
+
+[node name="Block" type="StaticBody3D" unique_id=855331272]
+script = ExtResource("1_im0tn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=642791159]
+shape = SubResource("BoxShape3D_qncar")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1641679219]
+mesh = SubResource("BoxMesh_qncar")
